@@ -75,6 +75,19 @@ namespace fizzbuzz.npi.test
             Assert.AreEqual(result, 1);
         }
 
+        [TestMethod]
+        public void TestNpi_Should_Return_4_When_1_3_Plus()
+        {
+            //Arrange
+            var input = "1 3 +";
+
+            //Act
+            var result = _fizzBuzzNpi.ComputeNpi(input);
+
+            //Assert
+            Assert.AreEqual(result, 4);
+        }
+
     }
 
 }
