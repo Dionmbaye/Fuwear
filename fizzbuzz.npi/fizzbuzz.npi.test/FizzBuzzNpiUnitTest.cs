@@ -88,6 +88,32 @@ namespace fizzbuzz.npi.test
             Assert.AreEqual(result, 4);
         }
 
+        [TestMethod]
+        public void TestNpi_Should_Return_6_When_3_2_Mult()
+        {
+            //Arrange
+            var input = "3 2 x";
+
+            //Act
+            var result = _fizzBuzzNpi.ComputeNpi(input);
+
+            //Assert
+            Assert.AreEqual(result, 6);
+        }
+
+        [TestMethod]
+        public void TestNpi_Should_Return_18_When_2_3_6_Plus_Mult()
+        {
+            //Arrange
+            var input = "2 3 6 + x";
+
+            //Act
+            var result = _fizzBuzzNpi.ComputeNpi(input);
+
+            //Assert
+            Assert.AreEqual(result, 18);
+        }
+
     }
 
 }
