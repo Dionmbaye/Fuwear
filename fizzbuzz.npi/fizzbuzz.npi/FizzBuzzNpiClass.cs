@@ -31,13 +31,13 @@
             List<string> splitedText;
             List<int> splitedValues;
             List<string> splitedOperators;
-            splitedText = text.Split(" ").ToList();
             var result = 0;
             var value = 0;
 
             splitedText = new List<string>();
             splitedValues = new List<int>();
             splitedOperators = new List<string>();
+            splitedText = text.Split(" ").ToList();
 
             foreach (var i in splitedText)
             {
