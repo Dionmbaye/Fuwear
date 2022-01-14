@@ -13,7 +13,7 @@ namespace fizzbuzz.npi.test
             var input = 6;
 
             //Act
-            var result = _fizzBuzzNpi.FizzBuzz(input);
+            var result = _fizzBuzzNpi.ComputeFizzBuzz(input);
 
             //Assert
             Assert.AreEqual(result, "Fizz");
@@ -27,7 +27,7 @@ namespace fizzbuzz.npi.test
             var input = 25;
 
             //Act
-            var result = _fizzBuzzNpi.FizzBuzz(input);
+            var result = _fizzBuzzNpi.ComputeFizzBuzz(input);
 
             //Assert
             Assert.AreEqual(result, "Buzz");
@@ -41,7 +41,7 @@ namespace fizzbuzz.npi.test
             var input = 15;
 
             //Act
-            var result = _fizzBuzzNpi.FizzBuzz(input);
+            var result = _fizzBuzzNpi.ComputeFizzBuzz(input);
 
             //Assert
             Assert.AreEqual(result, "FizzBuzz");
@@ -55,11 +55,24 @@ namespace fizzbuzz.npi.test
             var input = 7;
 
             //Act
-            var result = _fizzBuzzNpi.FizzBuzz(input);
+            var result = _fizzBuzzNpi.ComputeFizzBuzz(input);
 
             //Assert
             Assert.AreEqual(result, "7");
 
+        }
+
+        [TestMethod]
+        public void TestNpi_Should_Return_1_When_1()
+        {
+            //Arrange
+            var input = "1";
+
+            //Act
+            var result = _fizzBuzzNpi.ComputeNpi(input);
+
+            //Assert
+            Assert.AreEqual(result, 1);
         }
 
     }

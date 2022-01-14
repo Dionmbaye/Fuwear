@@ -2,7 +2,7 @@
 {
     public class FizzBuzzNpiClass
     {
-        public string FizzBuzz(int input)
+        public string ComputeFizzBuzz(int input)
         {
             var isMultipleDe3 = input % 3 == 0;
             var isMultipleDe5 = input % 5 == 0;
@@ -22,5 +22,9 @@
             else return input.ToString();
         }
 
+        public int ComputeNpi(string text)
+        {
+            return 1;
+        }
     }
 }
